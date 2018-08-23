@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
         <record id="esalav" model="survey.survey">
-            <field name="title">TEST de ZAVIC</field>
+            <field name="title">TEST de Cleaver</field>
             <field name="stage_id" ref="survey.stage_in_progress" />
             <field name="auth_required" eval="False" />
             <field name="users_can_go_back" eval="True" />
-            <field name="description">Test de Zavic de R.H. (Human Resources)</field>
+            <field name="description">Test de Cleaver de R.H. (Human Resources)</field>
             <field name="thank_you_message">Agradecemos su apoyo con el Test, ¡Muchas Gracias!.</field>
         </record>
                 <!-- PAGE 1  :: TITLE-->
         <record model="survey.page" id="esalidaav_1">
-            <field name="title">Selecciona en orden prioritario tus respuestas</field>
+            <field name="title">Selecciona como te identificas del lado izquierdo la mayor y el derecho la menor.</field>
             <field name="survey_id" ref="esalav" />
             <field name="sequence">1</field>
         </record>
@@ -18,11 +18,11 @@
         <record model="survey.question" id="esalidaav_1_1">
             <field name="page_id" ref="esalidaav_1" />
             <field name="sequence">1</field>
-            <field name="question">1.-Si usted tuviera la habilidad y condiciones adecuadas, a que se dedicaría:</field>
+            <field name="question">Sección 1 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
                 <!--ANSWERS of Q1 -->
                 <record model="survey.label" id="esalidaav_1_1_1">
@@ -37,47 +37,35 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_1_1_3">
-                    <field name="question_id" ref="esalidaav_1_1"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_1_1_4">
-                    <field name="question_id" ref="esalidaav_1_1"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_1_1_1">
                     <field name="question_id_2" ref="esalidaav_1_1"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) A modificar todos los jardines de la ciudad.</field>
+                    <field name="value">a)Persuasivo</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_1_2">
                     <field name="question_id_2" ref="esalidaav_1_1"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) A obtener logros por medio de la política.</field>
+                    <field name="value">b)Gentil</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_1_3">
                     <field name="question_id_2" ref="esalidaav_1_1"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) A prestar dinero a altos intereses.</field>
+                    <field name="value">c)Humilde</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_1_4">
                     <field name="question_id_2" ref="esalidaav_1_1"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) A cumplir con las obligaciones que su religión le impone.</field>
+                    <field name="value">d)Original</field>
                 </record>
         <!--QUESTION 2-->
         <record model="survey.question" id="esalidaav_1_2">
             <field name="page_id" ref="esalidaav_1" />
             <field name="sequence">1</field>
-            <field name="question">2.-Cuando ve un accidente usted:</field>
+            <field name="question">Sección 2 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
                 <!--ANSWERS of Q2 -->
                 <record model="survey.label" id="esalidaav_1_2_1">
@@ -92,47 +80,35 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_1_2_3">
-                    <field name="question_id" ref="esalidaav_1_2"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_1_2_4">
-                    <field name="question_id" ref="esalidaav_1_2"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_1_2_1">
                     <field name="question_id_2" ref="esalidaav_1_2"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Se pone a orar con la persona accidentada.</field>
+                    <field name="value">a)Agresivo</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_2_2">
                     <field name="question_id_2" ref="esalidaav_1_2"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Pide una ambulancia.</field>
+                    <field name="value">b)Alma de la fiesta</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_2_3">
                     <field name="question_id_2" ref="esalidaav_1_2"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Cuida las pertenencias del accidentado.</field>
+                    <field name="value">c)Comodino</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_2_4">
                     <field name="question_id_2" ref="esalidaav_1_2"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Trata de detener al culpable.</field>
+                    <field name="value">d)Temeroso</field>
                 </record>
         <!--QUESTION 3-->
         <record model="survey.question" id="esalidaav_1_3">
             <field name="page_id" ref="esalidaav_1" />
             <field name="sequence">1</field>
-            <field name="question">3.-Al conducir su automóvil por descuido usted se pasa un alto, el agente de tránsito lo detiene y para permitirle circular nuevamente, le solicita cierta suma de dinero usted:</field>
+            <field name="question">Sección 3 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
                 <!--ANSWERS of Q3 -->
                 <record model="survey.label" id="esalidaav_1_3_1">
@@ -147,47 +123,35 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_1_3_3">
-                    <field name="question_id" ref="esalidaav_1_3"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_1_3_4">
-                    <field name="question_id" ref="esalidaav_1_3"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_1_3_1">
                     <field name="question_id_2" ref="esalidaav_1_3"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Arranca su automóvil y deja al agente de transito.</field>
+                    <field name="value">a)Agradable</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_3_2">
                     <field name="question_id_2" ref="esalidaav_1_3"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Trata de llegar a un acuerdo encaminado a disminuir la cantidad de dinero.</field>
+                    <field name="value">b)Temeroso de Dios</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_3_3">
                     <field name="question_id_2" ref="esalidaav_1_3"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Pide le sea levantada la infracción pertinente.</field>
+                    <field name="value">c)Tenaz</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_3_4">
                     <field name="question_id_2" ref="esalidaav_1_3"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Amenaza al agente con reportarlo con sus superiores.</field>
+                    <field name="value">d)Atractivo</field>
                 </record>
         <!--QUESTION 4-->
         <record model="survey.question" id="esalidaav_1_4">
             <field name="page_id" ref="esalidaav_1" />
             <field name="sequence">1</field>
-            <field name="question">4.-Al conducir su automóvil por descuido usted se pasa un alto, el agente de tránsito lo detiene y para permitirle circular nuevamente, le solicita cierta suma de dinero usted:</field>
+            <field name="question">Sección 4 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
                 <!--ANSWERS of Q4 -->
                 <record model="survey.label" id="esalidaav_1_4_1">
@@ -202,47 +166,35 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_1_4_3">
-                    <field name="question_id" ref="esalidaav_1_4"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_1_4_4">
-                    <field name="question_id" ref="esalidaav_1_4"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_1_4_1">
                     <field name="question_id_2" ref="esalidaav_1_4"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Arranca su automóvil y deja al agente de transito.</field>
+                    <field name="value">a)Cauteloso</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_4_2">
                     <field name="question_id_2" ref="esalidaav_1_4"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Trata de llegar a un acuerdo encaminado a disminuir la cantidad de dinero.</field>
+                    <field name="value">b)Determinado</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_4_3">
                     <field name="question_id_2" ref="esalidaav_1_4"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Pide le sea levantada la infracción pertinente.</field>
+                    <field name="value">c)Convincente</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_4_4">
                     <field name="question_id_2" ref="esalidaav_1_4"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Amenaza al agente con reportarlo con sus superiores.</field>
+                    <field name="value">d)Bonachon</field>
                 </record>
         <!--QUESTION 5-->
         <record model="survey.question" id="esalidaav_1_5">
             <field name="page_id" ref="esalidaav_1" />
             <field name="sequence">1</field>
-            <field name="question">5.-Prefiere una amistad que:</field>
+            <field name="question">Sección 5 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
                 <!--ANSWERS of Q5-->
                 <record model="survey.label" id="esalidaav_1_5_1">
@@ -257,53 +209,84 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_1_5_3">
-                    <field name="question_id" ref="esalidaav_1_5"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_1_5_4">
-                    <field name="question_id" ref="esalidaav_1_5"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_1_5_1">
                     <field name="question_id_2" ref="esalidaav_1_5"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Sea activo y le guste reparar defectos en su hogar.</field>
+                    <field name="value">a)Dócil</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_5_2">
                     <field name="question_id_2" ref="esalidaav_1_5"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Se interese por ser líder en el sindicato del cual forma parte.</field>
+                    <field name="value">b)Atrevido</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_5_3">
                     <field name="question_id_2" ref="esalidaav_1_5"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Asistir con frecuencia a eventos religiosos.</field>
+                    <field name="value">c)Leal</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_1_5_4">
                     <field name="question_id_2" ref="esalidaav_1_5"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Le interesa emprender negocios.</field>
+                    <field name="value">d)Encantador</field>
+                </record>
+                <!--QUESTION 6-->
+        <record model="survey.question" id="esalidaav_1_6">
+            <field name="page_id" ref="esalidaav_1" />
+            <field name="sequence">1</field>
+            <field name="question">Sección 6 de 24</field>
+            <field name="type">matrix</field>
+            <field name="display_mode">columns</field>
+            <field name="column_nb">12</field>
+            <field name="constr_mandatory" eval="False" />
+        </record>
+                <!--ANSWERS of Q6-->
+                <record model="survey.label" id="esalidaav_1_6_1">
+                    <field name="question_id" ref="esalidaav_1_6"/>
+                    <field name="sequence">1</field>
+                    <field name="value">1</field>
+                    <field name="quizz_mark">1</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_6_2">
+                    <field name="question_id" ref="esalidaav_1_6"/>
+                    <field name="sequence">2</field>
+                    <field name="value">2</field>
+                    <field name="quizz_mark">2</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_1_6_1">
+                    <field name="question_id_2" ref="esalidaav_1_6"/>
+                    <field name="sequence">1</field>
+                    <field name="value">a)Dispuesto</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_1_6_2">
+                    <field name="question_id_2" ref="esalidaav_1_6"/>
+                    <field name="sequence">2</field>
+                    <field name="value">b)Deseoso</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_1_6_3">
+                    <field name="question_id_2" ref="esalidaav_1_6"/>
+                    <field name="sequence">3</field>
+                    <field name="value">c)Consecuente</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_1_6_4">
+                    <field name="question_id_2" ref="esalidaav_1_6"/>
+                    <field name="sequence">4</field>
+                    <field name="value">d)Entusiasta</field>
                 </record>
 
-		<!-- Page 2  pregunta 6 - 10 -->
+		<!-- Page 2 pregunta 7 a 12 -->
         <record model="survey.page" id="esalidaav_2">
-            <field name="title">Selecciona en orden prioritario tus respuestas</field>
+            <field name="title">Selecciona como te identificas del lado izquierdo la mayor y el derecho la menor.</field>
             <field name="survey_id" ref="esalav"/>
             <field name="sequence">2</field>
         </record>
         <record model="survey.question" id="esalidaav_2_1">
             <field name="page_id" ref="esalidaav_2" />
             <field name="sequence">1</field>
-            <field name="question">6.-Si al llegar a su trabajo encuentra en el baño un reloj en el lavabo usted:</field>
+            <field name="question">Sección 7 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True"/>
+            <field name="constr_mandatory" eval="False"/>
         </record>
                 <record model="survey.label" id="esalidaav_2_1_1">
                     <field name="question_id" ref="esalidaav_2_1"/>
@@ -317,46 +300,34 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_2_1_3">
-                    <field name="question_id" ref="esalidaav_2_1"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_2_1_4">
-                    <field name="question_id" ref="esalidaav_2_1"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_2_1_1">
                     <field name="question_id_2" ref="esalidaav_2_1"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Trataría de encontrar a su dueño.</field>
+                    <field name="value">a)Fuerza de voluntad</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_1_2">
                     <field name="question_id_2" ref="esalidaav_2_1"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Lo reporta a sus superiores y lo entrega.</field>
+                    <field name="value">b)Mente abierta</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_1_3">
                     <field name="question_id_2" ref="esalidaav_2_1"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) No hace ningún comentario y espera a que lo busquen</field>
+                    <field name="value">c)Complaciente</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_1_4">
                     <field name="question_id_2" ref="esalidaav_2_1"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Lo deja donde lo encontró.</field>
+                    <field name="value">d)Animoso</field>
                 </record>
         <record model="survey.question" id="esalidaav_2_2">
             <field name="page_id" ref="esalidaav_2" />
             <field name="sequence">2</field>
-            <field name="question">7.-Un buen gobierno debería:</field>
+            <field name="question">Sección 8 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
                 <record model="survey.label" id="esalidaav_2_2_1">
                     <field name="question_id" ref="esalidaav_2_2"/>
@@ -370,46 +341,34 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_2_2_3">
-                    <field name="question_id" ref="esalidaav_2_2"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_2_2_4">
-                    <field name="question_id" ref="esalidaav_2_2"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_2_2_1">
                     <field name="question_id_2" ref="esalidaav_2_2"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Ayudar a las clases necesitadas.</field>
+                    <field name="value">a)Confiado</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_2_2">
                     <field name="question_id_2" ref="esalidaav_2_2"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Ampliar las zonas turísticas de cinco estrellas.</field>
+                    <field name="value">b)Simpatizador</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_2_3">
                     <field name="question_id_2" ref="esalidaav_2_2"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Buscar a los mejores líderes de su partido.</field>
+                    <field name="value">c)Tolerante</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_2_4">
                     <field name="question_id_2" ref="esalidaav_2_2"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Permitir que la religión sea oficial.</field>
+                    <field name="value">d)Afirmativo</field>
                 </record>
         <record model="survey.question" id="esalidaav_2_3">
             <field name="page_id" ref="esalidaav_2" />
             <field name="sequence">3</field>
-            <field name="question">8.-Un amigo suyo desea obtener un ascenso dentro de su trabajo, usted le aconseja:</field>
+            <field name="question">Sección 9 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
                 <record model="survey.label" id="esalidaav_2_3_1">
                     <field name="question_id" ref="esalidaav_2_3"/>
@@ -423,46 +382,34 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_2_3_3">
-                    <field name="question_id" ref="esalidaav_2_3"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_2_3_4">
-                    <field name="question_id" ref="esalidaav_2_3"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_2_3_1">
                     <field name="question_id_2" ref="esalidaav_2_3"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Que sea cumplido y eficiente.</field>
+                    <field name="value">a)Ecuánime</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_3_2">
                     <field name="question_id_2" ref="esalidaav_2_3"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Que busque cuales son los errores del jefe para que demuestre que el no es perfecto.</field>
+                    <field name="value">b)Preciso</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_3_3">
                     <field name="question_id_2" ref="esalidaav_2_3"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Que prometa una manda a su santo de preferencia.</field>
+                    <field name="value">c)Nervioso</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_3_4">
                     <field name="question_id_2" ref="esalidaav_2_3"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Que ofrezca una excelente comida a los dirigentes de la empresa.</field>
+                    <field name="value">d)Jovial</field>
                 </record>
         <record model="survey.question" id="esalidaav_2_4">
             <field name="page_id" ref="esalidaav_2" />
             <field name="sequence">4</field>
-            <field name="question">9.-Si Luis al llegar a su casa observa que le están robando las llantas al automóvil de su vecino:</field>
+            <field name="question">Sección 10 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
                 <record model="survey.label" id="esalidaav_2_4_1">
                     <field name="question_id" ref="esalidaav_2_4"/>
@@ -476,46 +423,34 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_2_4_3">
-                    <field name="question_id" ref="esalidaav_2_4"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_2_4_4">
-                    <field name="question_id" ref="esalidaav_2_4"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_2_4_1">
                     <field name="question_id_2" ref="esalidaav_2_4"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Llamaría a la policía.</field>
+                    <field name="value">a)Disciplinado</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_4_2">
                     <field name="question_id_2" ref="esalidaav_2_4"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Llamaría a su vecino.</field>
+                    <field name="value">b)Generoso</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_4_3">
                     <field name="question_id_2" ref="esalidaav_2_4"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Pediría a los asaltantes parte del beneficio que obtendrán en el robo, por guardar silencio.</field>
+                    <field name="value">c)Animoso</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_4_4">
                     <field name="question_id_2" ref="esalidaav_2_4"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Mejor no haría nada y se metería a su casa.</field>
+                    <field name="value">d)Persistente</field>
                 </record>
         <record model="survey.question" id="esalidaav_2_5">
             <field name="page_id" ref="esalidaav_2" />
             <field name="sequence">5</field>
-            <field name="question">10.-Un empleado de 60 años  que ha sido leal a la empresa durante 28 años, se queja del exceso de trabajo, lo mejor sería:</field>
+            <field name="question">Sección 11 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
                 <record model="survey.label" id="esalidaav_2_5_1">
                     <field name="question_id" ref="esalidaav_2_5"/>
@@ -529,55 +464,86 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_2_5_3">
-                    <field name="question_id" ref="esalidaav_2_5"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_2_5_4">
-                    <field name="question_id" ref="esalidaav_2_5"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_2_5_1">
                     <field name="question_id_2" ref="esalidaav_2_5"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Pedir un aumento de sueldo.</field>
+                    <field name="value">a)Competitivo</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_5_2">
                     <field name="question_id_2" ref="esalidaav_2_5"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Recurrir al sindicato para que éste le ayude.</field>
+                    <field name="value">b)Alegre</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_5_3">
                     <field name="question_id_2" ref="esalidaav_2_5"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Que recurra a su guía espiritual para que le diga como se le debe ayudar y su trabajo no se le haga pesado.</field>
+                    <field name="value">c)Considerado</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_2_5_4">
                     <field name="question_id_2" ref="esalidaav_2_5"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Que solicite una persona para que le ayude.</field>
+                    <field name="value">d)Armonioso</field>
                 </record>
-		<!-- Page 3 -->
-        <record model="survey.page" id="esalidaav_3">
-            <field name="title">Selecciona en orden prioritario tus respuestas</field>
-            <field name="survey_id" ref="esalav"/>
-            <field name="sequence">3</field>
-        </record>
-                <!--QUESTIONS 11 'TIL 15-->
-        <record model="survey.question" id="esalidaav_3_1">
-            <field name="page_id" ref="esalidaav_3" />
-            <field name="sequence">1</field>
-            <field name="question">11.-Usted visita a un amigo enfermo y lo mejor sería:</field>
+
+        <record model="survey.question" id="esalidaav_2_6">
+            <field name="page_id" ref="esalidaav_2" />
+            <field name="sequence">5</field>
+            <field name="question">Sección 12 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
-                <!--ANSWERS of 11 -->
+                <record model="survey.label" id="esalidaav_2_6_1">
+                    <field name="question_id" ref="esalidaav_2_6"/>
+                    <field name="sequence">1</field>
+                    <field name="value">1</field>
+                    <field name="quizz_mark">1</field>
+                </record>
+                <record model="survey.label" id="esalidaav_2_6_2">
+                    <field name="question_id" ref="esalidaav_2_6"/>
+                    <field name="sequence">2</field>
+                    <field name="value">2</field>
+                    <field name="quizz_mark">2</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_2_6_1">
+                    <field name="question_id_2" ref="esalidaav_2_6"/>
+                    <field name="sequence">1</field>
+                    <field name="value">a)Admirable</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_2_6_2">
+                    <field name="question_id_2" ref="esalidaav_2_6"/>
+                    <field name="sequence">2</field>
+                    <field name="value">b)Bondadoso</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_2_6_3">
+                    <field name="question_id_2" ref="esalidaav_2_6"/>
+                    <field name="sequence">3</field>
+                    <field name="value">c)Resignado</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_2_6_4">
+                    <field name="question_id_2" ref="esalidaav_2_6"/>
+                    <field name="sequence">4</field>
+                    <field name="value">d)Carácter firme</field>
+                </record>
+
+		<!-- Page 3 -->
+        <record model="survey.page" id="esalidaav_3">
+            <field name="title">Selecciona como te identificas del lado izquierdo la mayor y el derecho la menor.</field>
+            <field name="survey_id" ref="esalav"/>
+            <field name="sequence">3</field>
+        </record>
+                <!--QUESTION 13-->
+        <record model="survey.question" id="esalidaav_3_1">
+            <field name="page_id" ref="esalidaav_3" />
+            <field name="sequence">1</field>
+            <field name="question">Sección 13 de 24</field>
+            <field name="type">matrix</field>
+            <field name="display_mode">columns</field>
+            <field name="column_nb">12</field>
+            <field name="constr_mandatory" eval="False" />
+        </record>
+                <!--ANSWERS of 13 -->
                 <record model="survey.label" id="esalidaav_3_1_1">
                     <field name="question_id" ref="esalidaav_3_1"/>
                     <field name="sequence">1</field>
@@ -590,47 +556,35 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_3_1_3">
-                    <field name="question_id" ref="esalidaav_3_1"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_3_1_4">
-                    <field name="question_id" ref="esalidaav_3_1"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_3_1_1">
                     <field name="question_id_2" ref="esalidaav_3_1"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Que lo convenza de acudir al seguro social para que su atención médica no le sea costosa.</field>
+                    <field name="value">a)Obediente</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_1_2">
                     <field name="question_id_2" ref="esalidaav_3_1"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Proponerle su ayuda cuando él tenga que acudir a sus citas médicas.</field>
+                    <field name="value">b)Quisquilloso</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_1_3">
                     <field name="question_id_2" ref="esalidaav_3_1"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Que como todo le ha salido mal últimamente vea a una persona para que le realice una limpia.</field>
+                    <field name="value">c)Inconquistable</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_1_4">
                     <field name="question_id_2" ref="esalidaav_3_1"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Decirle lo importante que fueron las juntas de vecinos ahora que él estuvo hospitalizado.</field>
+                    <field name="value">d)Juguetón</field>
                 </record>
-        <!--QUESTION 12-->
+        <!--QUESTION 14-->
         <record model="survey.question" id="esalidaav_3_2">
             <field name="page_id" ref="esalidaav_3" />
             <field name="sequence">1</field>
-            <field name="question">12.-Al salir de viaje sus vecinos le piden cuidar su casa, durante su ausencia usted:</field>
+            <field name="question">Sección 14 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
                 <!--ANSWERS of Q12 -->
                 <record model="survey.label" id="esalidaav_3_2_1">
@@ -645,49 +599,37 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_3_2_3">
-                    <field name="question_id" ref="esalidaav_3_2"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_3_2_4">
-                    <field name="question_id" ref="esalidaav_3_2"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_3_2_1">
                     <field name="question_id_2" ref="esalidaav_3_2"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Les dice que no debido a que se encuentra muy ocupado en esos días.</field>
+                    <field name="value">a)Respetuoso</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_2_2">
                     <field name="question_id_2" ref="esalidaav_3_2"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Atiende con gusto la petición de sus vecinos.</field>
+                    <field name="value">b)Emprendedor</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_2_3">
                     <field name="question_id_2" ref="esalidaav_3_2"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) A cambio de sus servicios les solicita prestado el automóvil que no utilizarán en su viaje.</field>
+                    <field name="value">c)Optimista</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_2_4">
                     <field name="question_id_2" ref="esalidaav_3_2"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Asiste al módulo de vigilancia local, para que le brinde mayor seguridad.</field>
+                    <field name="value">d)Servicial</field>
                 </record>
-        <!--QUESTION 13-->
+        <!--QUESTION 15-->
         <record model="survey.question" id="esalidaav_3_3">
             <field name="page_id" ref="esalidaav_3" />
             <field name="sequence">1</field>
-            <field name="question">13.-Si encuentra a un niño llorando sólo en una tienda comercial usted:</field>
+            <field name="question">Sección 15 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
-                <!--ANSWERS of Q13 -->
+                <!--ANSWERS of Q15 -->
                 <record model="survey.label" id="esalidaav_3_3_1">
                     <field name="question_id" ref="esalidaav_3_3"/>
                     <field name="sequence">1</field>
@@ -700,50 +642,37 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_3_3_3">
-                    <field name="question_id" ref="esalidaav_3_3"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_3_3_4">
-                    <field name="question_id" ref="esalidaav_3_3"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_3_3_1">
                     <field name="question_id_2" ref="esalidaav_3_3"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Lo ayudaría a buscar  a su familia en la tienda.</field>
+                    <field name="value">a)Valiente</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_3_2">
                     <field name="question_id_2" ref="esalidaav_3_3"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Lo llevaría al  área de servicios generales para que ahí espere a que lo ayuden.</field>
+                    <field name="value">b)Inspirador</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_3_3">
                     <field name="question_id_2" ref="esalidaav_3_3"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Pasaría de largo porque usted tiene prisa.</field>
+                    <field name="value">c)Sumiso</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_3_4">
                     <field name="question_id_2" ref="esalidaav_3_3"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Lo llevaría a su casa pero le cobra a la mamá por el tiempo que usted perdió por andarla buscando.</field>
+                    <field name="value">d)Tímido</field>
                 </record>
-        <!--QUESTION 14-->
+        <!--QUESTION 16-->
         <record model="survey.question" id="esalidaav_3_4">
             <field name="page_id" ref="esalidaav_3" />
             <field name="sequence">1</field>
-            <field name="question">14.-Si usted viviera en provincia y tuviera más entradas de las que necesita que preferiría
-                hacer con el dinero:</field>
+            <field name="question">Sección 16 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
-                <!--ANSWERS of Q14 -->
+                <!--ANSWERS of Q16 -->
                 <record model="survey.label" id="esalidaav_3_4_1">
                     <field name="question_id" ref="esalidaav_3_4"/>
                     <field name="sequence">1</field>
@@ -756,49 +685,37 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_3_4_3">
-                    <field name="question_id" ref="esalidaav_3_4"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_3_4_4">
-                    <field name="question_id" ref="esalidaav_3_4"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_3_4_1">
                     <field name="question_id_2" ref="esalidaav_3_4"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Hacerlo producir para ayudar al desarrollo de la industria.</field>
+                    <field name="value">a)Adaptable</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_4_2">
                     <field name="question_id_2" ref="esalidaav_3_4"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Donar el dinero para la construcción de una iglesia.</field>
+                    <field name="value">b)Disputador</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_4_3">
                     <field name="question_id_2" ref="esalidaav_3_4"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Darlo a una sociedad para el beneficio de las familias humildes del poblado.</field>
+                    <field name="value">c)Indiferente</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_4_4">
                     <field name="question_id_2" ref="esalidaav_3_4"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Apoyar ayuda al partido político con el cual simpatiza.</field>
+                    <field name="value">d)Sangre liviana</field>
                 </record>
-        <!--QUESTION 15-->
+        <!--QUESTION 17-->
         <record model="survey.question" id="esalidaav_3_5">
             <field name="page_id" ref="esalidaav_3" />
             <field name="sequence">1</field>
-            <field name="question">15.-Su hijo ha dejado sus estudios por un tiempo:</field>
+            <field name="question">Sección 17 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
-                <!--ANSWERS of Q15-->
+                <!--ANSWERS of Q17-->
                 <record model="survey.label" id="esalidaav_3_5_1">
                     <field name="question_id" ref="esalidaav_3_5"/>
                     <field name="sequence">1</field>
@@ -811,55 +728,87 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_3_5_3">
-                    <field name="question_id" ref="esalidaav_3_5"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_3_5_4">
-                    <field name="question_id" ref="esalidaav_3_5"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_3_5_1">
                     <field name="question_id_2" ref="esalidaav_3_5"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Le sugiere que vea a los maestros para que les proponga que lo ayuden.</field>
+                    <field name="value">a)Amiguero</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_5_2">
                     <field name="question_id_2" ref="esalidaav_3_5"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Que haga lo que quiera pues ya está grande.</field>
+                    <field name="value">b)Paciente</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_5_3">
                     <field name="question_id_2" ref="esalidaav_3_5"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Que curse nuevamente el año para que pase las materias reprobadas.</field>
+                    <field name="value">c)Confianza en sí mismo</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_3_5_4">
                     <field name="question_id_2" ref="esalidaav_3_5"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Darle apoyo económico y moral para que supere este tropiezo en sus estudios.</field>
+                    <field name="value">d)Mesurado para hablar</field>
                 </record>
-		 <!--Page 4-->
-        <record model="survey.page" id="esalidaav_4">
-            <field name="title">Selecciona en orden prioritario tus respuestas</field>
-            <field name="survey_id" ref="esalav" />
-            <field name="sequence">4</field>
-        </record>
-            <!--QUESTIONS 16 'TIL 20-->
-        <record model="survey.question" id="esalidaav_4_1">
-            <field name="page_id" ref="esalidaav_4" />
+
+        <!--QUESTION 18-->
+        <record model="survey.question" id="esalidaav_3_6">
+            <field name="page_id" ref="esalidaav_3" />
             <field name="sequence">1</field>
-            <field name="question">16.-A qué actividad prefiere dedicarse durante sus vacaciones:</field>
+            <field name="question">Sección 18 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
-                <!--ANSWERS of Q16 -->
+                <!--ANSWERS of Q18-->
+                <record model="survey.label" id="esalidaav_3_6_1">
+                    <field name="question_id" ref="esalidaav_3_6"/>
+                    <field name="sequence">1</field>
+                    <field name="value">1</field>
+                    <field name="quizz_mark">1</field>
+                </record>
+                <record model="survey.label" id="esalidaav_3_6_2">
+                    <field name="question_id" ref="esalidaav_3_6"/>
+                    <field name="sequence">2</field>
+                    <field name="value">2</field>
+                    <field name="quizz_mark">2</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_3_6_1">
+                    <field name="question_id_2" ref="esalidaav_3_6"/>
+                    <field name="sequence">1</field>
+                    <field name="value">a)Conforme</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_3_6_2">
+                    <field name="question_id_2" ref="esalidaav_3_6"/>
+                    <field name="sequence">2</field>
+                    <field name="value">b)Confiable</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_3_6_3">
+                    <field name="question_id_2" ref="esalidaav_3_6"/>
+                    <field name="sequence">3</field>
+                    <field name="value">c)Pacífico</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_3_6_4">
+                    <field name="question_id_2" ref="esalidaav_3_6"/>
+                    <field name="sequence">4</field>
+                    <field name="value">d)Positivo</field>
+                </record>
+		 <!--Page 4-->
+        <record model="survey.page" id="esalidaav_4">
+            <field name="title">Selecciona como te identificas del lado izquierdo la mayor y el derecho la menor.</field>
+            <field name="survey_id" ref="esalav" />
+            <field name="sequence">4</field>
+        </record>
+            <!--QUESTIONS 19-->
+        <record model="survey.question" id="esalidaav_4_1">
+            <field name="page_id" ref="esalidaav_4" />
+            <field name="sequence">1</field>
+            <field name="question">Sección 19 de 24</field>
+            <field name="type">matrix</field>
+            <field name="display_mode">columns</field>
+            <field name="column_nb">12</field>
+            <field name="constr_mandatory" eval="False" />
+        </record>
+                <!--ANSWERS of Q19 -->
                 <record model="survey.label" id="esalidaav_4_1_1">
                     <field name="question_id" ref="esalidaav_4_1"/>
                     <field name="sequence">1</field>
@@ -872,49 +821,37 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_4_1_3">
-                    <field name="question_id" ref="esalidaav_4_1"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_4_1_4">
-                    <field name="question_id" ref="esalidaav_4_1"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_4_1_1">
                     <field name="question_id_2" ref="esalidaav_4_1"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Obtener experiencia en otro negocio que no sea el propio.</field>
+                    <field name="value">a)Aventurero</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_1_2">
                     <field name="question_id_2" ref="esalidaav_4_1"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Participar en la campaña política de diputados que se va a efectuar en su localidad.</field>
+                    <field name="value">b)Receptivo</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_1_3">
                     <field name="question_id_2" ref="esalidaav_4_1"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Asistir a un retiro organizado por la iglesia.</field>
+                    <field name="value">c)Cordial</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_1_4">
                     <field name="question_id_2" ref="esalidaav_4_1"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Visitar un lugar que no conoce, en compañía de su familia.</field>
+                    <field name="value">d)Moderado</field>
                 </record>
-        <!--QUESTION 17-->
+        <!--QUESTION 20-->
         <record model="survey.question" id="esalidaav_4_2">
             <field name="page_id" ref="esalidaav_4" />
             <field name="sequence">1</field>
-            <field name="question">17.-La familia de pero tiene un hijo drogadicto y es amigo de su hijo desde pequeño, al saberlo usted:</field>
+            <field name="question">Sección 20 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
-                <!--ANSWERS of Q17 -->
+                <!--ANSWERS of Q20 -->
                 <record model="survey.label" id="esalidaav_4_2_1">
                     <field name="question_id" ref="esalidaav_4_2"/>
                     <field name="sequence">1</field>
@@ -927,49 +864,37 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_4_2_3">
-                    <field name="question_id" ref="esalidaav_4_2"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_4_2_4">
-                    <field name="question_id" ref="esalidaav_4_2"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_4_2_1">
                     <field name="question_id_2" ref="esalidaav_4_2"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Le pide a su hijo que no lo vuelva a ver.</field>
+                    <field name="value">a)Indulgente</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_2_2">
                     <field name="question_id_2" ref="esalidaav_4_2"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Le sugiere a su familia que lo lleven a Centros de Integración Juvenil para que lo ayuden.</field>
+                    <field name="value">b)Esteta</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_2_3">
                     <field name="question_id_2" ref="esalidaav_4_2"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Si el muchacho ya es drogadicto le pide le obsequie un reloj que tanto le gusta a su hijo para no decírselo a sus padres.</field>
+                    <field name="value">c)Vigoroso</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_2_4">
                     <field name="question_id_2" ref="esalidaav_4_2"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Lo lleva a un centro de rehabilitación junto con su hijo para que sienta que lo apoya y no es rechazado.</field>
+                    <field name="value">d)Sociable</field>
                 </record>
-        <!--QUESTION 18-->
+        <!--QUESTION 21-->
         <record model="survey.question" id="esalidaav_4_3">
             <field name="page_id" ref="esalidaav_4" />
             <field name="sequence">1</field>
-            <field name="question">18.-Su esposa le comenta que al terminar de realizar sus actividades cotidianas le queda mucho tiempo libre, usted le sugiere:</field>
+            <field name="question">Sección 21 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
-                <!--ANSWERS of Q18 -->
+                <!--ANSWERS of 21 -->
                 <record model="survey.label" id="esalidaav_4_3_1">
                     <field name="question_id" ref="esalidaav_4_3"/>
                     <field name="sequence">1</field>
@@ -982,49 +907,37 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_4_3_3">
-                    <field name="question_id" ref="esalidaav_4_3"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_4_3_4">
-                    <field name="question_id" ref="esalidaav_4_3"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_4_3_1">
                     <field name="question_id_2" ref="esalidaav_4_3"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Que emplee su tiempo como catequista de la iglesia.</field>
+                    <field name="value">a)Parlanchín</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_3_2">
                     <field name="question_id_2" ref="esalidaav_4_3"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Que venda artículos femeninos.</field>
+                    <field name="value">b)Controlado</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_3_3">
                     <field name="question_id_2" ref="esalidaav_4_3"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Que promueva juntas entre los vecinos encaminadas a resolver los problemas de la comunidad.</field>
+                    <field name="value">c)Convencional</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_3_4">
                     <field name="question_id_2" ref="esalidaav_4_3"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Que asista con sus hijos a centros recreativos sí fuera posible.</field>
+                    <field name="value">d)Decisivo</field>
                 </record>
-        <!-- QUESTION 19 -->
+        <!-- QUESTION 22 -->
         <record model="survey.question" id="esalidaav_4_4">
             <field name="page_id" ref="esalidaav_4" />
             <field name="sequence">1</field>
-            <field name="question">19.-Quiere pedir un favor a un conocido, que beneficiará a la empresa para la cual trabaja:</field>
+            <field name="question">Sección 22 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
-                <!--ANSWERS of Q19 -->
+                <!--ANSWERS of Q22 -->
                 <record model="survey.label" id="esalidaav_4_4_1">
                     <field name="question_id" ref="esalidaav_4_4"/>
                     <field name="sequence">1</field>
@@ -1037,49 +950,36 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_4_4_3">
-                    <field name="question_id" ref="esalidaav_4_4"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_4_4_4">
-                    <field name="question_id" ref="esalidaav_4_4"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_4_4_1">
                     <field name="question_id_2" ref="esalidaav_4_4"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Le explica los motivos y necesidades por las cuales requiere ese favor.</field>
+                    <field name="value">a)Cohibido</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_4_2">
                     <field name="question_id_2" ref="esalidaav_4_4"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Le pide el favor sin mayor explicación.</field>
+                    <field name="value">b)Exacto</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_4_3">
                     <field name="question_id_2" ref="esalidaav_4_4"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Le hace creer que él será el más beneficiado al ofrecerle una retribución.</field>
+                    <field name="value">c)Franco</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_4_4">
                     <field name="question_id_2" ref="esalidaav_4_4"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Le sugiere a su jefe que sea él quien se lo pida y explique la necesidad.</field>
+                    <field name="value">d)Buen compañero</field>
                 </record>
-        <!-- QUESTION 20 -->
+        <!-- QUESTION 23 -->
         <record model="survey.question" id="esalidaav_4_5">
             <field name="page_id" ref="esalidaav_4" />
             <field name="sequence">1</field>
-            <field name="question">20.-Cual  de las siguientes ocupaciones escogería:</field>
+            <field name="question">Sección 23 de 24</field>
             <field name="type">matrix</field>
             <field name="display_mode">columns</field>
             <field name="column_nb">12</field>
-            <field name="constr_mandatory" eval="True" />
+            <field name="constr_mandatory" eval="False" />
         </record>
-                 <!--&lt;!&ndash;ANSWERS of Q20 &ndash;&gt;-->
                 <record model="survey.label" id="esalidaav_4_5_1">
                     <field name="question_id" ref="esalidaav_4_5"/>
                     <field name="sequence">1</field>
@@ -1092,36 +992,66 @@
                     <field name="value">2</field>
                     <field name="quizz_mark">2</field>
                 </record>
-                <record model="survey.label" id="esalidaav_4_5_3">
-                    <field name="question_id" ref="esalidaav_4_5"/>
-                    <field name="sequence">3</field>
-                    <field name="value">3</field>
-                    <field name="quizz_mark">3</field>
-                </record>
-                <record model="survey.label" id="esalidaav_4_5_4">
-                    <field name="question_id" ref="esalidaav_4_5"/>
-                    <field name="sequence">4</field>
-                    <field name="value">4</field>
-                    <field name="quizz_mark">4</field>
-                </record>
                 <record model="survey.label" id="esalidaav_1_4_5_1">
                     <field name="question_id_2" ref="esalidaav_4_5"/>
                     <field name="sequence">1</field>
-                    <field name="value">a) Trabajar en forma independiente.</field>
+                    <field name="value">a)Diplomático</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_5_2">
                     <field name="question_id_2" ref="esalidaav_4_5"/>
                     <field name="sequence">2</field>
-                    <field name="value">b) Como encargado del departamento en el cual a usted le gusta.</field>
+                    <field name="value">b)Audaz</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_5_3">
                     <field name="question_id_2" ref="esalidaav_4_5"/>
                     <field name="sequence">3</field>
-                    <field name="value">c) Dedicarse a estudios de la iglesia.</field>
+                    <field name="value">c)Refinado</field>
                 </record>
                 <record model="survey.label" id="esalidaav_1_4_5_4">
                     <field name="question_id_2" ref="esalidaav_4_5"/>
                     <field name="sequence">4</field>
-                    <field name="value">d) Trabajador social.</field>
+                    <field name="value">d)Satisfecho</field>
+                </record>
+        <!-- QUESTION 24 -->
+        <record model="survey.question" id="esalidaav_4_6">
+            <field name="page_id" ref="esalidaav_4" />
+            <field name="sequence">1</field>
+            <field name="question">Sección 24 de 24</field>
+            <field name="type">matrix</field>
+            <field name="display_mode">columns</field>
+            <field name="column_nb">12</field>
+            <field name="constr_mandatory" eval="False" />
+        </record>
+                <record model="survey.label" id="esalidaav_4_6_1">
+                    <field name="question_id" ref="esalidaav_4_6"/>
+                    <field name="sequence">1</field>
+                    <field name="value">1</field>
+                    <field name="quizz_mark">1</field>
+                </record>
+                <record model="survey.label" id="esalidaav_4_6_2">
+                    <field name="question_id" ref="esalidaav_4_6"/>
+                    <field name="sequence">2</field>
+                    <field name="value">2</field>
+                    <field name="quizz_mark">2</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_4_6_1">
+                    <field name="question_id_2" ref="esalidaav_4_6"/>
+                    <field name="sequence">1</field>
+                    <field name="value">a)Inquieto</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_4_6_2">
+                    <field name="question_id_2" ref="esalidaav_4_6"/>
+                    <field name="sequence">2</field>
+                    <field name="value">b)Popular</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_4_6_3">
+                    <field name="question_id_2" ref="esalidaav_4_6"/>
+                    <field name="sequence">3</field>
+                    <field name="value">c)Buen vecino</field>
+                </record>
+                <record model="survey.label" id="esalidaav_1_4_6_4">
+                    <field name="question_id_2" ref="esalidaav_4_6"/>
+                    <field name="sequence">4</field>
+                    <field name="value">d)Devoto</field>
                 </record>
 </odoo>

@@ -3,7 +3,7 @@
     <report
     id="hr_survey_cleaver_test"
     model="survey.user_input"
-    string="Test Zavic XLSX"
+    string="Test Cleaver XLSX"
     report_type="xlsx"
     name="hr_survey_cleaver_test.hr_survey_cleaver_test"
     file="hr_survey_cleaver_test"
